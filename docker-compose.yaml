@@ -1,0 +1,15 @@
+version: '3.2'
+
+services:
+   backend-kafka:
+      build: .
+      container_name: backend-kafka
+      volumes:
+        - ".:/app"
+      ports:
+        - "3002:3000"
+
+networks:
+   default:
+      external: true
+      name: appvideos
