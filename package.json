@@ -1,0 +1,25 @@
+{
+  "name": "@felippedeiro/app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "npx jest --runInBand",
+    "test:w": "npx jest --runInBand --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.3.0",
+    "kafkajs": "^1.15.0",
+    "nodemailer": "^6.7.2"
+   },
+   "devDependencies": {
+     "nodemon": "^2.0.15",
+    "jest": "^27.4.7",
+    "rewire": "^6.0.0"
+  }
+}
